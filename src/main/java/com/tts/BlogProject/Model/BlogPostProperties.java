@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class BlogPostProperties {
 	
 	@Id //sets as primary key
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="blog_id")
 	//allows the underlying DB set the value for id
 	private long id;
